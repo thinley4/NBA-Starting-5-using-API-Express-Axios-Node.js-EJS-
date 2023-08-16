@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/style/nba.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="/images/l.png" />
+    <title>All time- Your Starting 5</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="header">
+            <div class="head">
+                <h1>NBA 🏀</h1>
+            </div>
+            <div class="head">
+                <h1>Your All-time Starting 5</h1>
+            </div>
+
+        </section>
+
+        <section class="button">
+            <form id="myForm" method="post" class="buttons">
+                <button type="submit" formaction="/get">⛹️‍♂️</button>
+                <button type="submit" formaction="/g2">⛹️‍♂️</button>
+                <button type="submit" formaction="/g3">⛹️‍♂️</button>
+                <button type="submit" formaction="/g4">⛹️‍♂️</button>
+                <button type="submit" formaction="/g5">⛹️‍♂️</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <div class="row">
+                <div class="player1">
+                    <% if(locals.content){ %>
+                        <h2>Name:
+                            <%= content.first_name %>
+                                <%= content.last_name %>
+                        </h2>
+                        <h3>Team:
+                            <%= content.team.full_name %>
+                        </h3>
+                        <h4>Height:
+                            <%= content.height_feet %>.<%= content.height_inches %>
+                        </h4>
+                        <% }else{ %>
+                            <h2>Player 1</h2>
+                            <% } %>
+                </div>
+
+                <div class="player1">
+                    <% if(locals.c1){ %>
+                        <h2>Name:
+                            <%= c1.first_name %>
+                                <%= c1.last_name %>
+                        </h2>
+                        <h3>Team:
+                            <%= c1.team.full_name %>
+                        </h3>
+                        <h4>Height:
+                            <%= c1.height_feet %>.<%= c1.height_inches %>
+                        </h4>
+                        <% }else{ %>
+                            <h2>Player 2</h2>
+                            <% } %>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="player1">
+                    <% if(locals.c2){ %>
+                        <h2>Name:
+                            <%= c2.first_name %>
+                                <%= c2.last_name %>
+                        </h2>
+                        <h3>Team:
+                            <%= c2.team.full_name %>
+                        </h3>
+                        <h4>Height:
+                            <%= c2.height_feet %>.<%= c2.height_inches %>
+                        </h4>
+                        <% }else{ %>
+                            <h2>Player 3</h2>
+                            <% } %>
+                </div>
+
+                <div class="player1">
+                    <% if(locals.c3){ %>
+                        <h2>Name:
+                            <%= c3.first_name %>
+                                <%= c3.last_name %>
+                        </h2>
+                        <h3>Team:
+                            <%= c3.team.full_name %>
+                        </h3>
+                        <h4>Height:
+                            <%= c3.height_feet %>.<%= c3.height_inches %>
+                        </h4>
+                        <% }else{ %>
+                            <h2>Player 4</h2>
+                            <% } %>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="player1">
+                    <% if(locals.c4){ %>
+                        <h2>Name:
+                            <%= c4.first_name %>
+                                <%= c4.last_name %>
+                        </h2>
+                        <h3>Team:
+                            <%= c4.team.full_name %>
+                        </h3>
+                        <h4>Height:
+                            <%= c4.height_feet %>.<%= c4.height_inches %>
+                        </h4>
+                        <% }else{ %>
+                            <h2>Player 5</h2>
+                            <% } %>
+                </div>
+            </div>
+
+        </section>
+
+    </div>
+</body>
+
+</html>
