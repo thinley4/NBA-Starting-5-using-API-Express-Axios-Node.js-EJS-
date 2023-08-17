@@ -7,4 +7,4 @@ step 1:- npm i
 step 2:- nodemon index.js
 
 
-Let me know you starting 5.
+Let me know your starting 5.
